@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@ body{
 .container{
     margin: auto;
     width: 500px;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,4 +94,98 @@ body{
 .lap_item {
     width: 120px;
     height: 30px;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(37, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    max-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    font-size: 76px;
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+}
+
+.bottom_part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around; /* Ensures equal spacing between buttons */
+    align-items: center;
+    width: 100%; /* Makes sure buttons stretch across the available width */
+    max-width: 300px; /* Optional: Restricts the total width */
+    gap: 30px;
+}
+
+.btns button {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btns .start {
+    background-color: #508052;
+}
+
+.btns .start:active,
+.btns .restart:active,
+.btns .lap:active {
+    transform: scale(0.9);
+}
+
+.btns .start.on {
+    background-color: #d92027;
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 600px) {
+    .btns {
+        max-width: 100%; /* Ensure the buttons fit within smaller screens */
+        gap: 15px; /* Add spacing between buttons */
+    }
+
+    .btns button {
+        width: 70px;
+        height: 70px;
+    }
 }
