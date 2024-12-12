@@ -26,7 +26,7 @@ function stopTimer() {
 
 function resetTimer() {
     clearInterval(interval);
-    timer.innerHTML = `<span class="min">00 :</span><span class="sec">00 .</span><span class="min">00</span>`;
+    timer.innerHTML = `<span class="min">00 : </span><span class="sec">00 .</span><span class="min">00</span>`;
     elapsedTime = 0;
     lapBox.innerHTML = ""; 
     isRunning = false;
@@ -44,7 +44,7 @@ function updateTimer() {
     let sec = String(seconds).padStart(2, "0");
     let msec = String(milliseconds).padStart(2, "0");
 
-    timer.innerHTML = `<span class="min">${min} :</span><span class="sec">${sec} .</span><span class="min">${msec}</span>`;
+    timer.innerHTML = `<span class="min">${min} : </span><span class="sec">${sec} .</span><span class="min">${msec}</span>`;
 }
 
 function addLap() {
