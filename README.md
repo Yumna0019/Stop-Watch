@@ -5,7 +5,7 @@ The project is a simple and functional stopwatch application built using HTML, C
 ## ✨ Features
 
 - **Start/Stop Functionality:** Begin or pause the stopwatch at the click of a button.
-- **Reset Option:** Reset the timer to 00:00:00 effortlessly.
+- **Reset Option:** Reset the timer to 00:00.00 effortlessly.
 - **Lap Functionality:** Record lap times during the stopwatch session.
 - **Responsive Design:** Optimized for use on both desktop and mobile devices.
 
